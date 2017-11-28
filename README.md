@@ -28,8 +28,9 @@ $ docker-compose run web /usr/local/bin/python create_demo.py
 $ docker-compose up -d
 ```
 
-Теперь можно открыть сам веб-сервис в браузере по адресу <localhost:5000>.
+Теперь можно открыть сам веб-сервис в браузере по адресу <http://localhost:5000>.
 
 Для остановки работы контейнеров выполните следующую команду в директории с проектом
 ```bash
-$ docker-compose
+$ docker-compose stop
+```
