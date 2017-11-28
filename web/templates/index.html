@@ -1,0 +1,21 @@
+<!doctype html>
+<title>simply dashboard</title>
+<p>send a post</p>
+<form name='add-user' method='POST' action='/'>
+  <div class='user-name-input'>
+    user: <input name='user-name' class='user-name' type='text' size=16>
+    <input type='submit' value='send post'>
+  </div>
+  <div class='user-text-input'>
+    text:<br><textarea name='user-text' style='width: 300px; height: 100px;'></textarea>
+  </div>
+</form>
+<hr><p>Posts</p>
+<ul>
+  {% for post in posts %}
+    <li>
+      <div class='user' style='font-weight: bold;'>{{ post.user }}</div>
+      <div class='post'>{{ post.text }}</div>
+    </li>
+  {% endfor %}
+</ul>
