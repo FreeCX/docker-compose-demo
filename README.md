@@ -1,7 +1,5 @@
 # docker-compose-demo
 
-Репозиторий с кодом для статьи <https://freecx.github.io/blog/2016/02/15/working-with-docker>
-
 ## Как запускать
 Создайте файл `.env` со следующим содержимым:
 ```bash
